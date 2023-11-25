@@ -11,7 +11,7 @@ void ext_int_0 () interrupt 0 {
 void ext_int_1 () interrupt 2 {
 	int a = P2;
 	P2 = 0x10;
-	delay(5);
+	display2(5);
 	P2 = a;
 }
 
